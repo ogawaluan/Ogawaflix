@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import CadastroVideo from './pages/cadastro/Video'
+import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/cadastro/Categoria';
 
 ReactDOM.render(
@@ -14,15 +14,7 @@ ReactDOM.render(
       <Route path="/cadastro/categoria" component={CadastroCategoria} />
       <Route component={() => (<div>Página 404</div>)} />
 
-
     </Switch>
   </BrowserRouter>,
-  
-
-
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
